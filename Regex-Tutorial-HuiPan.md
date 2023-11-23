@@ -1,4 +1,4 @@
-# [Regex: A Regular Expression Tutorial](<script src="https://gist.github.com/HuiPan-Peter/39c6ed15cabad0038b4098ef1e22eb92.js"></script>)
+# [Regex: A Regular Expression Tutorial](https://gist.github.com/HuiPan-Peter/39c6ed15cabad0038b4098ef1e22eb92)
 
 The purpose of this tutorial is to discuss regular expressions step by step, and discuss their possible uses. A regular expression, also known as regex, is a sequence of characters that defines a search pattern in text.
 
