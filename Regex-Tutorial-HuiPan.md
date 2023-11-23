@@ -23,6 +23,7 @@ This tutorial will break down each part of the preceding expression and describe
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [Summary of the regex matching an email](#Demo-regex-summary)
 
 ## Regex Components
 
@@ -136,16 +137,27 @@ Look-ahead and look-behind assertions are also known as lookarounds and only tel
 
 - Lookahead
 
-`\d+(?=000)`
+`\d+(?=888)`
 
-In this example, any found digits must have `000` after to be considered a match. So `230` is not a match, but `23000` is.
+In this example, any found digits must have `888` after to be considered a match. So `128` is not a match, but `12888` is.
 
 - Lookbehind
   - A lookbehind matches only if there's something before it:
 
-`(?=10)+\d`
+`(?=88)+\d`
 
-So `23` is not a match, but `1023` is.
+So `12` is not a match, but `8812` does.
+
+### [Summary of the regex matching an email](#Demo-regex-summary)
+
+Demo regular expressions: `^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$`
+- ^                It is the start of the string.
+- ([a-z0-9_\.-]+)  Matching any letter a-z and is case senstive. It also matches a character 0-9 and matches the characters "_" , "-" , and ".";
+- @                The string should contains ‘@’ character after some alphanumeric characters.
+- ([\da-z\.-])     Matching a single digit from 0-9, any character a-z (case senstive), and the characters "." and "-".;
+- \.               Email should contain a dot followed by ‘@’ and characters;
+- ([a-z\.]{2,6})   Matching any character a-z(case senstive) and the character ".", and should contain from 2 to 6 alphabetical characters at the end of the string.
+- $                The end of the string.
 
 ## Author
 
