@@ -2,9 +2,9 @@
 
 The purpose of this tutorial is to discuss regular expressions step by step, and discuss their possible uses. A regular expression, also known as regex, is a sequence of characters that defines a search pattern in text.
 
-## Summary
+## Demo Regular Expression (A Sample Regex)
 
-For example, regex can be used to match an email using the following expression:
+For example, regex can be used to match an email address by using the following expression:
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
